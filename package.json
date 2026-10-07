@@ -1,0 +1,14 @@
+{
+  "name": "biff-ticket-view",
+  "version": "0.1.4",
+  "private": true,
+  "description": "Unofficial BIFF reservation list helper",
+  "scripts": {
+    "test": "node --test tests.cjs",
+    "check": "node scripts/check-release.cjs",
+    "package": "python3 scripts/package.py"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

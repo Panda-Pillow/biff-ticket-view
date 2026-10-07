@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "나의 상영 일정 — BIFF 예매 도우미 (비공식)",
+  "version": "0.1.4",
+  "description": "BIFF 예매 목록을 관람일별로 모아 보고, 상세보기 후에도 필터와 보던 위치를 이어가세요. 비공식 도구입니다.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://biff.maketicket.co.kr/mypage/tickets/list*"
+      ],
+      "js": [
+        "core.js",
+        "content.js"
+      ],
+      "run_at": "document_idle",
+      "css": [
+        "page.css"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  }
+}

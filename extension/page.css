@@ -1,0 +1,5 @@
+/* Hide the site's rotating bottom banner and footer on the ticket list only. */
+body > section.banner:has(#bannerList),
+body > footer.login-footer {
+  display: none !important;
+}
